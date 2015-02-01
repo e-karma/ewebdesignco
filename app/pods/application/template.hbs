@@ -1,7 +1,8 @@
-<div class="{{isOpenClass}}">
+{{!-- <div class="{{isOpenClass}}">
   {{#if isOpenClass}}   
   <div id="modal"> 
   {{outlet}}
+
     <p class="top"{{action 'close'}}>
       <button>
         {{link-to 'Close' 'application'}}
@@ -9,40 +10,18 @@
     </p>
   </div>
   {{/if}}
-</div>
-
+</div> --}}
+ 
 <div class="wrap">
   <main class="content">
     <ul id="categories" class="clr">
 
-      <li>
-        <div>
-            <img src="assets/images/hc1.png" alt=""/>
-            <h1>eWebDesign Da shittt</h1>
-          {{#if isOpenClass}}
-          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
-          {{else}}
-          <p{{action 'open'}}>{{link-to 'About' 'about'}}</p>   
-          {{/if}}      
-    
-        </div>
-      </li>
-
-      <li>
-          <div>
-            <img src="assets/images/hc1.png" alt=""/>
-            <h1></h1>
-          
-          {{#if isOpenClass}}
-          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
-          {{else}}
-          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
-          {{/if}} 
-
-        </div>
-      </li>
+      {{#hc-2 action="open"}}
+        
+      {{/hc-2}}
+ {{!--      {{hc-1}} --}}
       
-      <li>
+      {{!-- <li>
           <div>
             <img src="assets/images/hc1.png" alt=""/>
             <h1></h1>
@@ -98,35 +77,13 @@
           {{/if}} 
         </div>
       </li>
-      
-      <li>
-          <div>
-            <img src="assets/images/hc1.png" alt=""/>
-        
-            {{#if isOpenClass}}
-            <h1{{action 'close'}}>{{link-to 'Close' 'application'}}</h1>
-          {{else}}
-            <h1{{action 'open'}}>{{link-to 'SEO' 'marketing.seo'}}</h1>   
-          {{/if}} 
-
-            {{#if isOpenClass}}
-          <p {{action 'close' class=top}}>{{link-to 'Close' 'application'}}</p>
-          {{else}}
-          <p {{action 'open' }}>{{link-to 'Content Strategy' 'marketing.content-strategy'}}</p>   
-          {{/if}} 
-        </div>
-      </li>
-
+    
      
       <li>
           <div>
             <img src="assets/images/hc1.png" alt=""/>
 
-          {{#if isOpenClass}}
-            <h1{{action 'close'}}>{{link-to 'Close' 'application'}}</h1>
-          {{else}}
-            <h1{{action 'open'}}>{{link-to 'Social Media' 'marketing.social-media'}}</h1>   
-          {{/if}} 
+        
 
 
           {{#if isOpenClass}}
@@ -194,14 +151,14 @@
           {{#if isOpenClass}}
             <h1{{action 'close'}}>{{link-to 'Close' 'application'}}</h1>
           {{else}}
-            <h1{{action 'open'}}>{{link-to 'Ember' 'ember'}}</h1>   
+            <h1{{action 'open'}}>{{link-to 'Ember Tutorial' 'screencasts.ember-tutorial'}}</h1>   
           {{/if}} 
 
           <p></p>
             {{#if isOpenClass}}
           <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
           {{else}}
-          <p{{action 'open'}}>{{link-to 'Ember Data' 'ember'}}</p>   
+          <p{{action 'open'}}>{{link-to 'Ember Data' 'ember-js.ember-data'}}</p>   
           {{/if}} 
         </div>
       </li>
@@ -213,14 +170,14 @@
           {{#if isOpenClass}}
             <h1{{action 'close'}}>{{link-to 'Close' 'application'}}</h1>
           {{else}}
-            <h1{{action 'open'}}>{{link-to 'Ember Model' 'ember'}}</h1>   
+            <h1{{action 'open'}}>{{link-to 'Ember Model' 'ember-js.ember-model'}}</h1>   
           {{/if}} 
           
 
             {{#if isOpenClass}}
           <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
           {{else}}
-          <p{{action 'open'}}>{{link-to 'Ember Rails' 'ember'}}</p>   
+          <p{{action 'open'}}>{{link-to 'Ember Rails' 'ember-js.ember-rails'}}</p>   
           {{/if}} 
         </div>
       </li>
@@ -231,15 +188,8 @@
              {{#if isOpenClass}}
               <h1{{action 'close'}}>{{link-to 'Close' 'application'}}</h1>
             {{else}}
-              <h1{{action 'open'}}>{{link-to 'HTML Bars' 'ember'}}</h1>   
+              <h1{{action 'open'}}>{{link-to 'HTML Bars' 'ember-js.htmlbars'}}</h1>   
             {{/if}} 
-
-            {{#if isOpenClass}}
-              <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
-            {{else}}
-              <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
-            {{/if}} 
-            
         </div>
       </li>
 
@@ -290,7 +240,7 @@
             {{#if isOpenClass}}
           <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
           {{else}}
-          <p{{action 'open'}}>{{link-to 'React' 'js-frameworks.react'}}</p>   
+          <p{{action 'open'}}>{{link-to 'React' 'js-frameworks.react-js'}}</p>   
           {{/if}} 
         </div>
       </li>
@@ -314,11 +264,11 @@
       <li>
           <div>
             <img src="assets/images/hc1.png" alt=""/>
-            <h1>{{link-to 'Rails' 'rails'}}</h1>
+    
             {{#if isOpenClass}}
           <h1{{action 'close'}}>{{link-to 'Close' 'application'}}</h1>
           {{else}}
-          <h1{{action 'open'}}>{{link-to 'Rails' 'rails'}}</h1>   
+          <h1{{action 'open'}}>{{link-to 'Rails' 'rails-api'}}</h1>   
           {{/if}} 
             <p></p>
         </div>
@@ -330,26 +280,26 @@
             {{#if isOpenClass}}
           <h1{{action 'close'}}>{{link-to 'Close' 'application'}}</h1>
           {{else}}
-          <h1{{action 'open'}}>{{link-to 'Rails Authentication' 'rails.authentication'}}</h1>   
+          <h1{{action 'open'}}>{{link-to 'Rails Authentication' 'rails-api.authentication'}}</h1>   
           {{/if}} 
 
           {{#if isOpenClass}}
             <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
           {{else}}
-            <p{{action 'open'}}>{{link-to 'Rails' 'rails.generate-model'}}</p>   
+            <p{{action 'open'}}>{{link-to 'Rails' 'rails-api.generate-model'}}</p>   
           {{/if}} 
         </div>
       </li>
       <li>
           <div>
             <img src="assets/images/hc1.png" alt=""/>
-            <h1>{{link-to 'Sign Up' 'sign-up'}}</h1>
+           
             {{#if isOpenClass}}
-          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          <h1{{action 'close'}}>{{link-to 'Close' 'application'}}</h1>
           {{else}}
-          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          <h1{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</h1>   
           {{/if}} 
-            <p></p>
+            
         </div>
       </li>
       <li>
@@ -399,28 +349,8 @@
           {{/if}} 
             <p></p>
         </div>
-      </li>
-      <li>
-          <div>
-            <img src="assets/images/hc1.png" alt=""/>
-            <h1></h1>
-            <p></p>
-        </div>
-      </li>
-      <li>
-          <div>
-            <img src="assets/images/hc1.png" alt=""/>
-            <h1></h1>
-            <p></p>
-        </div>
-      </li>
-      <li>
-          <div>
-            <img src="assets/images/hc1.png" alt=""/>
-            <h1></h1>
-            <p></p>
-        </div>
-      </li>
+      </li> --}}
+      
     </ul>
   </main>
 </div>

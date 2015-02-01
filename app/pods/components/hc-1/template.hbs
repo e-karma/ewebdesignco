@@ -1,0 +1,15 @@
+<li>
+  <div>
+    <img src="assets/images/hc1.png" alt=""/>
+    <h1></h1>
+    
+    {{#if isOpenClass}}
+    <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+    {{else}}
+    <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+    {{/if}} 
+
+    {{yield}}
+
+  </div>
+</li>
