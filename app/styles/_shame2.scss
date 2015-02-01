@@ -187,9 +187,18 @@ $limargin: .333333%;
   // background: rgba(#222, .6);
   z-index:1;
   img {
-    margin-top:6em;
-    margin-left:9em;
+    margin-top:5em;
+    margin-left:7em;
   }
+  p {
+      text-align:center;
+      font-size:150%;
+      margin-top:2em;
+      padding:5em;
+      background: url(images/hc3.png) no-repeat center center fixed;
+      width:auto;
+      height:100%;
+    }
   button {
     float:right;
     margin-left:60em;
@@ -201,4 +210,5 @@ $limargin: .333333%;
     z-index:3;
     }   
 }
+
 

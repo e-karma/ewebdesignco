@@ -9,7 +9,7 @@ export default Ember.Controller.extend({
     },
     close: function() {
       this.set('isOpenClass', null);
-      this.transitionTo('application');
+      // this.transitionTo('application');
     }
   }
 });
