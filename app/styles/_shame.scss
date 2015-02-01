@@ -1,0 +1,157 @@
+// Fluid Style.
+ @mixin cf {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+$susy: (
+  columns: 24,
+  global-box-sizing: border-box
+
+  );
+@include border-box-sizing;
+
+// declaring variables for use with breakpoints
+$tablet: 660px;
+$desktop: 980px;
+
+$eweb:#eb7400;
+
+.wrap {
+  @include container(100%);
+  // padding-left: 15px;
+  // padding-right: 15px;
+
+  // breakpoint for tablet view
+  @include breakpoint($tablet) {
+    @include show-grid(9);
+  }
+
+  // breakpoint for desktop view
+  @include breakpoint($desktop) {
+    @include show-grid(24)
+  }
+}
+
+.content {
+  @include cf;
+  @include breakpoint($desktop) {
+    @include span(24 of 24);
+  }
+}
+
+
+.gallery {
+  @include cf;
+  @include breakpoint($desktop) {
+    padding-left: span(1 of 24 wide);
+    padding-right: span(1 of 24 wide);
+  }
+}
+
+.gallery__item {
+  list-style: none;
+  @include breakpoint(max-width $tablet) {
+  @include span(4 of 8);
+ 
+  margin-bottom: gutter(8);
+  &:nth-child(2n) {
+    @include last;
+  }
+}
+
+  @include breakpoint($tablet $desktop) {
+    @include span(3 of 9);
+    margin-bottom: gutter(9);
+    &:nth-child(3n) {
+      @include last;
+    }
+  }
+
+  @include breakpoint($desktop) {
+    @include span(2 of 21);
+    margin-bottom: gutter(21);
+    &:nth-child(7n) {
+      @include last;
+    }
+  }
+}
+
+.site-footer {
+  @include cf;
+}
+
+.widget {
+  @include gallery(4 of 8);
+  margin-bottom: gutter(8);
+  @include breakpoint($desktop) {
+    @include gallery(4 of 16);
+    margin-bottom: 0;
+  }
+}
+
+// Taking care of CSS
+
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.site-header, .site-footer {
+  background: rgba(234, 159, 195, 0.8);
+}
+
+.site-header {
+  a {
+    color: #555;
+    text-decoration: none;
+  }
+}
+
+.logo {
+  float: left;
+  line-height: 2rem;
+  font-size: 1.5rem;
+}
+
+nav {
+  float: right;
+  li {
+    list-style: none;
+    float: left;
+    margin-left: 1em;
+    line-height: 2rem;
+  }
+}
+
+.content {
+  margin-top: -20vh;
+  margin-bottom:-20vh;
+  background: $eweb;
+}
+
+
+
+.widget {
+  background: rgba(240, 150, 113, 0.8);
+}
+
+.site-footer {
+  margin-top: 5vh;
+}
+
+h2 {
+  padding: 1rem 0;
+  text-align: center;
+  color: #555;
+}
+

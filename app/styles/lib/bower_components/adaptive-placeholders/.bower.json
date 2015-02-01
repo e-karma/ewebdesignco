@@ -1,0 +1,14 @@
+{
+  "name": "adaptive-placeholders",
+  "homepage": "https://github.com/zellwk/adaptivePlaceholders",
+  "_release": "26e9c6c583",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "26e9c6c583f142be51458f21a54c96da22a4436b"
+  },
+  "_source": "git://github.com/zellwk/adaptivePlaceholders.git",
+  "_target": "*",
+  "_originalSource": "adaptive-placeholders",
+  "_direct": true
+}

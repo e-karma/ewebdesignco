@@ -1,0 +1,400 @@
+{{#if isOpenClass}}
+   
+ {{/if}}   
+
+
+<div class="{{isOpenClass}}">
+      {{#if isOpenClass}}
+         
+          <div id="modal"> 
+          <img src="assets/images/hc3.png">
+            <p class="top"{{action 'close'}}>
+              <button>
+                {{link-to 'Close' 'application'}}
+              </button>
+            </p>
+          </div>
+          {{/if}}     
+
+      {{outlet}}
+</div>
+
+<div class="wrap">
+  <main class="content">
+    <ul id="categories" class="clr">
+
+      <li>
+        <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>eWebDesign Da shittt</h1>
+          {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'About' 'about'}}</p>   
+          {{/if}}      
+    
+        </div>
+      </li>
+
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1></h1>
+          
+          {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+
+        </div>
+      </li>
+      
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1></h1>
+            
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Fast' 'examples.fast'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+      
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1></h1>
+  
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Affordable' 'examples.affordable'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1></h1>
+
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Quality' 'examples.quality'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+      
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            
+          {{#if isOpenClass}}
+            <h1{{action 'close'}}>{{link-to 'Close' 'application'}}</h1>
+            {{else}}
+            <h1{{action 'open'}}>{{link-to 'Pricing' 'pricing'}}</h1>   
+          {{/if}} 
+
+          {{#if isOpenClass}}
+            <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+            <p{{action 'open'}}>{{link-to 'Contact Us' 'contact'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+      
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+        
+            {{#if isOpenClass}}
+            <h1{{action 'close'}}>{{link-to 'Close' 'application'}}</h1>
+          {{else}}
+            <h1{{action 'open'}}>{{link-to 'SEO' 'marketing.seo'}}</h1>   
+          {{/if}} 
+
+            {{#if isOpenClass}}
+          <p {{action 'close' class=top}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p {{action 'open' }}>{{link-to 'Content Strategy' 'marketing.content-strategy'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+
+     
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1> {{link-to 'Social Media' 'marketing.social-media'}}</h1>
+            <p>{{link-to 'App Development' 'services.mobile-app-development'}}</p>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'Hosting' 'services.hosting'}}</h1>
+            <p>{{link-to 'Domains' 'services.domains'}}</p>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'Single Page Apps' 'services.single-page-applications'}}</h1>
+            <p>{{link-to 'Blog' 'examples.blog'}}</p>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'CMS' 'examples.cms'}}</h1>
+            <p> {{link-to 'CRM' 'examples.crm'}}</p>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'Ember' 'ember'}}</h1>
+            <p>{{link-to 'Ember Data' 'ember'}}</p>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'Ember Model' 'ember'}}</h1>
+            <p>{{link-to 'Ember Rails' 'ember'}}</p>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'HTML Bars' 'ember'}}</h1>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+            <p></p>
+        </div>
+      </li>
+
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'Javascript Frameworks' 'js-frameworks'}}</h1>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+            <p>{{link-to 'Ember' 'js-frameworks.ember'}}</p>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'Backbone' 'js-frameworks.backbone'}}</h1>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+            <p> {{link-to 'Angular' 'js-frameworks.angular-js'}}</p>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'Knockout' 'js-frameworks.knockout'}}</h1>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+            <p>{{link-to 'React' 'js-frameworks.react'}}</p>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'Meteor' 'js-frameworks.meteor'}}</h1>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+            <p>{{link-to 'Sails' 'js-frameworks.sails'}}</p>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'Rails' 'rails'}}</h1>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+            <p></p>
+        </div>
+      </li>
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'Rails Authentication' 'rails.authentication'}}</h1>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+            <p> {{link-to 'Rails' 'rails.generate-model'}}</p>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+        </div>
+      </li>
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'Sign Up' 'sign-up'}}</h1>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+            <p></p>
+        </div>
+      </li>
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'Node JS' 'nodejs'}}</h1>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+            <p></p>
+        </div>
+      </li>
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'Docker' 'docker'}}</h1>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+            <p></p>
+        </div>
+      </li>
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'Flynn For The Win' 'services.flynn'}}</h1>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+            <p></p>
+        </div>
+      </li>
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1>{{link-to 'Screen-Casts' 'screencasts'}}</h1>
+            {{#if isOpenClass}}
+          <p{{action 'close'}}>{{link-to 'Close' 'application'}}</p>
+          {{else}}
+          <p{{action 'open'}}>{{link-to 'Redesigning The Web' 'intro'}}</p>   
+          {{/if}} 
+            <p></p>
+        </div>
+      </li>
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1></h1>
+            <p></p>
+        </div>
+      </li>
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1></h1>
+            <p></p>
+        </div>
+      </li>
+      <li>
+          <div>
+            <img src="assets/images/hc1.png" alt=""/>
+            <h1></h1>
+            <p></p>
+        </div>
+      </li>
+    </ul>
+  </main>
+</div>
